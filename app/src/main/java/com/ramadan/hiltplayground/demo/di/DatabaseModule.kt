@@ -2,7 +2,6 @@ package com.ramadan.hiltplayground.demo.di
 
 import android.content.Context
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.ramadan.hiltplayground.demo.room.BlogDAO
 import com.ramadan.hiltplayground.demo.room.BlogDatabase
 import dagger.Module
@@ -25,7 +24,6 @@ object DatabaseModule {
             .fallbackToDestructiveMigration()
             .build()
     }
-
     @Singleton
     @Provides
     fun providesBlogDAO(blogDatabase: BlogDatabase):BlogDAO{
