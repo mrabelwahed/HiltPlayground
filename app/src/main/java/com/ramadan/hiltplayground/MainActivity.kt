@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
         aClass.doSomething()
         aClass.doAnotherThing()
     }
